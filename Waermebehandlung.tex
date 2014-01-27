@@ -1,0 +1,371 @@
+\documentclass[a4paper]{scrartcl} % twocolumn
+%\documentclass[12pt]{scrartcl}
+\usepackage[ngerman]{isodate} % \shortdate
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{pdfpages}
+\usepackage{gensymb}
+\usepackage{longtable}
+\usepackage{fullpage}
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{hyperref}
+\hypersetup{%
+    pdfborder = {0 0 0}
+}
+
+\usepackage{array,graphicx}
+\usepackage{booktabs}
+\usepackage{pifont}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+
+\newcommand*\rot{\rotatebox{90}}
+\newcommand*\OK{\ding{51}}
+
+\definecolor{Dunkelbraun}{HTML}{352201}
+\definecolor{Braunrot1}{HTML}{542803}
+\definecolor{Dunkelrot}{HTML}{681002}
+\definecolor{Dunkelkirschrot}{HTML}{881500}
+\definecolor{Kirschrot}{HTML}{A00000}
+\definecolor{Hellkirschrot}{HTML}{C11B1B}
+\definecolor{Hellrot}{HTML}{D44115}
+\definecolor{GutHellrot}{HTML}{EA572C}
+\definecolor{Gelbrot}{HTML}{E97E1C}
+\definecolor{Hellgelbrot}{HTML}{FFAA0F}
+\definecolor{Gelb}{HTML}{FBC034}
+\definecolor{Hellgelb}{HTML}{FFCF61}
+\definecolor{Gelbweiß}{HTML}{FFE6AD}
+
+\definecolor{Weißgelb}{HTML}{FFE6AD}
+\definecolor{Strohgelb}{HTML}{F0D965}
+\definecolor{Goldgelb}{HTML}{F5C533}
+\definecolor{Gelbbraun}{HTML}{FFAA01}
+\definecolor{Braunrot}{HTML}{C56F00}
+\definecolor{Rot}{HTML}{C74805}
+\definecolor{Purpurrot}{HTML}{C71B05}
+\definecolor{Violett}{HTML}{5F0284}
+\definecolor{Dunkelblau}{HTML}{0D0359}
+\definecolor{Kornblumenblau}{HTML}{1F0AB1}
+\definecolor{Hellblau}{HTML}{3B72B3}
+\definecolor{Blaugrau}{HTML}{7596BF}
+\definecolor{Grau}{HTML}{A3B2C5}
+
+
+
+\makeindex
+
+\begin{document}
+\title{Praktische Wärmebehandlung von Kohlenstoffstählen}
+\maketitle
+
+\begin{abstract}Ziel dieses Textes ist die prägnante und praxisorientierte Zusammenfassung der Wärmebehandlung von Stahl für Messer.\end{abstract}
+
+\tableofcontents
+\newpage
+\section{Ein paar Worte zu Beginn}
+Dies ist hauptsächlich eine Zusammenfassung und Umformatierung von Beiträgen\footnote{\href{http://www.messerforum.net/showthread.php?26645-Zusammenfassung-W\%E4rmebehandlung&highlight=Normalisieren}{Forumsbeitrag}} von ``Günther'' (und Anderen) aus dem ``Messerforum''\footnote{\href{http://www.messerforum.net}{www.messerforum.net}}. An einigen Stellen habe ich Dinge ergänzt oder kleinere Korrekturen vorgenommen.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{quote}
+Seit ich damit begonnen habe, Messer zu machen, habe ich versucht, aus jedem Messer das am besten mögliche zu machen.
+Nicht was die Verarbeitung betrifft, da hab ich noch viel zu lernen, was für mich aber zweitrangig ist, da ich ausschließlich Gebrauchsmesser baue.
+Aber in Bezug auf die Schneidengeometrie und besonders die Wärmebehandlung habe ich immer versucht, das Optimum heraus zu holen.
+
+Besonders nachdem ich das Buch von Roman Landes gelesen hatte, hat mich der Virus noch einmal richtig gepackt.
+
+Ich habe über einige Zeit im Forum alles, was mir zu diesem Thema interessant erschien gesammelt und in gekürzter Form zusammengefasst.
+
+Es handelt sich dabei um Beiträge von U.\ Gerfin, Lars Scheidler, Roman Landes, Claymore, Herbert, Uli Hennicke und noch einigen anderen Forumiten.
+Einen großen Teil der Wärmebehandlungswerte habe ich aus dem Böhler Edelstahlhandbuch entnommen.
+Ich habe die Angaben zu einem großen Teil selber in der Praxis ausprobiert, und bin immer sehr gut damit gefahren.
+
+Ich dachte, ich stelle die einzelnen Arbeitsschritte bei der Wärmebehandlung als erstes ein und dann später die am häufigsten verwendeten Stähle hier im Forum (1.2842, 1.3505, 1.2210. 1.2510, 1.4034, RWL, ATS, usw.) mit konkreten Temperaturwerten und wenn vorhanden mit Anlaßschaubildern.
+
+Der Beitrag kann gerne von Euch ergänzt werden, aber bitte nur klare Angaben und keine Diskussionen, sonst wird das Ganze zu unübersichtlich.
+
+Die angegebenen Werte sollten aber wirklich fundierte Angeben sein, und nicht z.B.:\ ich hab im Grill gehärtet, ist hart geworden, daher ist das eine gute Wärmebehandlung.
+
+Sollte dieser Beitrag nicht nötig sein, bitte einer der Moderatoren einfach löschen. 
+\end{quote}
+
+% \section{Temperaturenbestimmung anhand von Farben}
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{m{2em}lr}
+  {\color{Dunkelbraun}\rule[-2ex]{2em}{2em}} & Dunkelbraun & 550 {\degree}C\\
+  {\color{Braunrot1}\rule[-2ex]{2em}{2em}} & Braunrot & 630 {\degree}C\\
+  {\color{Dunkelrot}\rule[-2ex]{2em}{2em}} & Dunkelrot & 680 {\degree}C\\
+  {\color{Dunkelkirschrot}\rule[-2ex]{2em}{2em}} & Dunkelkirschrot & 740 {\degree}C\\
+  {\color{Kirschrot}\rule[-2ex]{2em}{2em}} & Kirschrot & 780 {\degree}C\\
+  {\color{Hellkirschrot}\rule[-2ex]{2em}{2em}} & Hellkirschrot & 810 {\degree}C\\
+  {\color{Hellrot}\rule[-2ex]{2em}{2em}} & Hellrot & 850 {\degree}C\\
+  {\color{GutHellrot}\rule[-2ex]{2em}{2em}} & Gut Hellrot & 900 {\degree}C\\
+  {\color{Gelbrot}\rule[-2ex]{2em}{2em}} & Gelbrot & 950 {\degree}C\\
+  {\color{Hellgelbrot}\rule[-2ex]{2em}{2em}} & Hellgelbrot & 1000 {\degree}C\\
+  {\color{Gelb}\rule[-2ex]{2em}{2em}} & Gelb & 1100 {\degree}C\\
+  {\color{Hellgelb}\rule[-2ex]{2em}{2em}} & Hellgelb & 1200 {\degree}C\\
+  {\color{Gelbweiß}\rule[-2ex]{2em}{2em}} & Gelbweiß & > 1300 {\degree}C\\
+\end{tabular}
+  \caption{Glühfarben nach \cite{wikiGlueh}}
+  \label{tab:glueh}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{m{2em}lr}
+  {\color{Weißgelb}\rule[-2ex]{2em}{2em}} & Weißgelb & 200 {\degree}C\\
+  {\color{Strohgelb}\rule[-2ex]{2em}{2em}} & Strohgelb & 220 {\degree}C\\
+  {\color{Goldgelb}\rule[-2ex]{2em}{2em}} & Goldgelb & 230 {\degree}C\\
+  {\color{Gelbbraun}\rule[-2ex]{2em}{2em}} & Gelbbraun & 240 {\degree}C\\
+  {\color{Braunrot}\rule[-2ex]{2em}{2em}} & Braunrot & 250 {\degree}C\\
+  {\color{Rot}\rule[-2ex]{2em}{2em}} & Rot & 260 {\degree}C\\
+  {\color{Purpurrot}\rule[-2ex]{2em}{2em}} & Purpurrot & 270 {\degree}C\\
+  {\color{Violett}\rule[-2ex]{2em}{2em}} & Violett & 280 {\degree}C\\
+  {\color{Dunkelblau}\rule[-2ex]{2em}{2em}} & Dunkelblau & 290 {\degree}C\\
+  {\color{Kornblumenblau}\rule[-2ex]{2em}{2em}} & Kornblumenblau & 300 {\degree}C\\
+  {\color{Hellblau}\rule[-2ex]{2em}{2em}} & Hellblau & 320 {\degree}C\\
+  {\color{Blaugrau}\rule[-2ex]{2em}{2em}} & Blaugrau & 340 {\degree}C\\
+  {\color{Grau}\rule[-2ex]{2em}{2em}} & Grau & 360 {\degree}C\\
+\end{tabular}
+  \caption{Anlassfarben nach \cite{wikiAnlass}}
+  \label{tab:anlass}
+\end{table}
+
+
+
+\section{Überblick über den optimalen Ablauf einer Wärmebehandlung}
+
+\subsection{Schmieden}
+Nun ja{\ldots}Schmieden.
+
+\subsection{Normalisieren}
+Kurz (wenige Sekunden 20{\ldots}60 s) alle Klingenteile so weit zum glühen bringen, dass ein Magnet an der Klinge nicht mehr greift, dann an der Luft abkühlen lassen bis die Klinge nicht mehr glüht (im Dunkeln kontrollieren), wieder auf Temperatur bringen und das Ganze 2 bis 5 Mal wiederholen.
+
+Temperaturangaben zum Normalisieren nach dem Kohlenstoffgehalt des Stahles:\\
+Bis 0,9\%C ca.\  730{\degree}C\\
+1 bis 1,2\%C ca.\  750{\degree}C\\
+1,2 bis 1,5\%C ca.\  770{\degree}C
+
+\subsection{Einformen oder scharfes Normalisieren}
+Ich persönlich bevorzuge scharfes Normalisieren. Dabei wird die Klinge auf Härtetemperatur gebracht und in warmem Öl abgeschreckt, das ganze zwei mal hintereinander.
+
+Sollte man sich für das Einformen entscheiden, dann wird die Klinge eingepackt, um sie vor Entkohlung zu schützen und auf 723{\degree}C gebracht dann auf 700{\degree}C heruntergekühlt, dann wieder auf 723{\degree}C, dann auf 730{\degree}C, 723{\degree}C, {\ldots} das Ganze mehrere Stunden.
+
+Ziel beider Wärmebehandlungen ist es, ein feines Gefüge herzustellen und ist nur nötig, wenn in einem hohen Temperaturbereich geschmiedet wurde, so z.\ B.:\ beim Feuerschweißen und bei unzureichender Umformung.
+
+\subsection{Weichglühen}
+Erhitzen nicht ganz bis nicht magnetisch, sondern kurz darunter um ein erneutes Kornwachstum zu vermeiden{\ldots}.und gaaaanz langsam abkühlen lassen.(Besser noch im Ofen unter kontrollierten Bedingungen) 680{\ldots}720{\degree}C mit langsamer Ofenabkülung bis 600{\degree}C dann an Luft erkalten lassen
+
+Improvisiertes Weichglühen nach dem Schmieden:
+
+Im Grill Einen großen Haufen Glut vorbereiten, einfach die zu behandelnden Klingen in die noch möglichst reichhaltige und glühende Kohle geben. Die Klingen mit der Kohle bedecken, am nächsten Morgen ausgraben und Du hast entspanntes und weichgeglühtes Material in Händen, was von der Gefügestuktur optimal zum Härten vorbereitet ist. Ich gehe hierbei allerdings von nicht rostfreiem Material aus.
+
+Man sollte nur darauf achten das die Klinge nicht flach reingelegt wird, sondern hochkant stehend auf dem Rücken sonst biegt sich es wie eine Banane.
+Und wichtig ist, reichlich, reichlich Kohle schön von beiden Seiten anhäufen und oben auf und nur glühen lassen!
+
+\subsection{Schleifen}
+Nun ja{\ldots}Schleifen.
+
+\subsection{Spannungsarmglühen (Im Ofen)}
+Nach dem Schleifen also vor dem Härten noch spannungsarm Glühen
+Das Glühen wird zweckmäßiger Weise im Bereich zwischen 600{\degree}C und 680{\degree}C durchgeführt. Die Glühdauer beträgt in der Regel 2{\ldots}5 Std. dann langsam erkalten lassen bis 600{\degree}C mit ca.\ 30{\degree}C pro Stunde. Dabei ist darauf zu achten, dass der Werkstoff vor allzu starker Zunderbildung zu schützen ist.
+
+Ziel dieser Behandlungen ist es ein Optimales Gefüge vor dem Härten einzustellen damit es auch wirklich leistungsfähig wird.
+
+\subsection{Härten}
+siehe unten
+
+\subsection{Anlassen}
+2x mindestens 1 Stunde bei 150 bis 200{\degree}C mit Abschrecken im Wasser nach jedem Vorgang (bei Kohlenstoffstählen)
+ist natürlich auch abhängig vom verwendeten Stahl.
+
+Bei den Glühvorgängen ist es nötig, den Stahl vor Entkohlung zu schützen. Dabei kann Härtefolie oder eine Schutzpaste verwendet werden.
+Als Alternative kann das Messer auch in Zeitungen eingeschlagen in ein Eisenrohr gesteckt werden, bei dem die Öffnungen entweder dicht verschraubt oder mit Lehm oder Ton verschlossen werden.
+
+\section{Härten von Kohlenstoffstählen}
+
+Vorbereitung:
+
+Öl auf ca.\  60{\degree}C vorwärmen.
+
+Dann entweder im Härteofen unter kontrollierter Temperaturanzeige, oder im Schmiedefeuer die Klinge zum Glühen bringen, bis ein Magnet nicht mehr greift.
+
+\subsection{Abschrecken}
+Klinge aus der Glut nehmen, und senkrecht in das Öl tauchen, und die Klinge darin bewegen (rühren).
+
+Wenn differentiell gehärtet werden soll (weicher Rücken, harte Schneide) dann entweder einfach nur den Schneidenbereich ins Öl tauchen, der hart werden soll (dann wird die Klinge mehr oder weniger Waagerecht eingetaucht), bis der Rücken an der Luft eine dunklere Glühfarbe erreicht hat, dann das Messer als Ganzes eintauchen und unter Bewegung abkühlen lassen.
+
+Eine andere Möglichkeit der differentiellen Härtung ist, die Klingenteile, die weich bleiben sollen, mit Lehm, Feuerzement oder ähnlichem abzudecken, und die Schneide unbedeckt zu lassen, dann die Klinge auf Härtetemperatur bringen, und als Ganzes in Öl abkühlen.
+
+Es ist empfehlenswert, die Klinge vorher mit Draht zu umwickeln, damit der Feuerzement besser hält.
+
+Nach dem Härten muß innerhalb einer Stunde angelassen werden.
+
+Am besten 2 Mal je ein bis zwei Stunden zwischen 150 bis 200{\degree}C und nach jedem Anlassen in Wasser abschrecken.
+
+\subsection{Anlassen}
+\begin{enumerate}
+\item Küchenbackofen: Den Ofen unbedingt eine Stunde vorheizen, bevor die Klingen rein kommen, da erst dann die angezeigte Temperatur sich eingependelt hat.
+
+\item Nach Anlassfarbe gehen:
+
+Klinge blank polieren
+Nahe an oder über eine Wärmequelle bringen und die Farbe der klinge kontrollieren.
+Erst wird die klinge hell Gelb dann immer dunkler, dann geht die Farbe in Braun über, dann ins blaue und dann grau.
+Dieser Vorgang sollte möglichst langsam vor sich gehen, das heißt, lieber etwas länger mit weniger Temperatur, als kurz und hohe Temperatur.
+
+Mit zunehmender Temperatur wird die Farbe wie oben beschrieben dunkler.
+
+Für uns ist nur Gelb bis Braun interessant. Sobald die gewünschte Farbe erreicht ist, in Wasser Abschrecken, wieder blank polieren, und wiederholen.
+
+Tiefkühlen nach dem Härten (bei Hochlegierten Stählen):
+
+Entweder Klinge in flüssigem Stickstoff oder in eine Mischung aus Trockeneis und Spiritus in einem Isolierbehälter (z.B.: Styroporbox) für eine Stunde einlegen. 
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Wärmebehandlung ausgesuchter Werkstoffe}
+\subsection{1.4034}
+Für eine von Härte 58 bis 60 HRC:
+\begin{enumerate}
+\item Einpacken in Härtefolie
+\item Vorwärmen 600{\ldots}800{\degree}C
+\item Hoch auf Härtetemperatur 1045{\degree}C 12 min halten
+\item abschrecken in Heißem Öl (60{\degree}C)
+\item sofort tiefkühlen (ca.\  1 Stunde)
+\item danach anlassen bei 150{\degree}C
+\item nach einer Stunde in Wasser abschrecken
+\item sofort wieder Tiefkühlen
+\item und noch einmal eine Stunde anlassen bei 150 bis 190{\degree}C
+\end{enumerate}
+\subsection{ATS und RWL34}
+\begin{enumerate}
+\item Vorwärmen1: 600{\degree}C{\ldots}700{\degree}C
+\item Vorwärmen2: 900{\degree}C
+\item Haltezeit: jeweils 3 min für den Ausgleich
+\item Austenitisieren: 1050{\degree}C
+\item Haltezeit: 15 min
+\item Abschrekchen in Öl 60{\ldots}80{\degree}C
+\item Tiefkühlen 1: ca 1 Std. bei mindestens{\ldots}70{\degree}C oder tiefer
+\item Anlassen1: 150{\degree}C
+\item Haltezeit: mind.\ 1 Stunde
+\item Abschrecken in Wasser 20{\degree}C
+\item Tiefkühlen 2: ca.\ 1 Std. bei mindestens{\ldots}70{\degree}C oder tiefer
+\item Anlassen2: 180{\ldots}200
+\item Haltezeit: mind 1 Stunde
+\item Abschrecken Wasser: 20{\degree}C
+\item Die erzeugte Härte sollte um 62HRC $\pm$1HRC sein 
+\end{enumerate}
+\subsection{1.3505 (102 Cr 6)}
+Falls Du geschmiedet hast. AC1 bei diesem Stahl liegt bei 750{\degree}C.
+\begin{enumerate}
+
+\item Normalisieren:
+kurzfristig (wenige Sekunden) erhitzen auf 850{\degree}C mehrmals (3x) mit Abkühlen an Luft bis die Glühfarbe im abgedunkeltem Raum erlischt (ca 600{\degree}C)
+
+\item Weichglühen und Glühen auf kugelige Karbide:
+\item Um 750{\degree}C 3{\ldots}5 Std. mit entsprechendem Entkohlungsschutz danach langsame Ofenabkühlung
+
+\item Härten für Messerklingen würde ich bei
+
+\item 820{\degree}C mit einer Haltezeit von 5 min machen
+\item Danach in Öl bei 60{\ldots}80{\degree}C
+
+\item optional kann ein TK gemacht werden muss jedoch nicht unbedingt sein
+
+\item Sofort Anlassen bei 160{\degree}C 1h
+\item Abschrecken in Wasser
+\item Dann auf die gewünschte Härte Anlassen
+\item 170{\ldots}200{\degree}C 1h bringt so 65{\ldots}63 HRC 
+\end{enumerate}
+
+\subsection{Weitere}
+Weiter Werkstoffe sind in Tabelle~\ref{tab:eck} beschrieben.
+\begin{table}[!h]
+\centering
+\small
+\begin{longtable}{|p{2cm}|p{18mm}|p{18mm}|p{20mm}|p{4cm}|p{25mm}|}
+    \hline % ---------------------------------------------------------------------------------
+      & 
+      \rot{Weichglühen} & 
+      \rot{Spannungsarmglühen} & 
+      \rot{Normalglühtemperatur} & 
+      \rot{Härten} & 
+      \rot{Anlasen}\\
+    \hline % ---------------------------------------------------------------------------------
+    Böhler K510 (1.2210) 115CrV3 Silberstahl & % Material
+    710{\ldots}750{\degree}C & % Weichglühen
+    ca.\ 650{\degree}C & % Spannungsarmglühen
+    & % Normalglühtemperatur
+    810{\ldots}840{\degree}C Abschrecken in Öl erzielbare Härte: 64{\ldots}66HRC & % Härten
+    100{\degree}C 64 HRC
+    200{\degree}C 62 HRC % Anlasen
+     \\
+    \hline % ---------------------------------------------------------------------------------
+    Böhler K455 (1.2550) 60WCrV7 & % Material
+    710{\ldots}750{\degree}C & % Weichglühen
+    ca.\ 650{\degree}C & % Spannungsarmglühen
+    & % Normalglühtemperatur
+    870{\ldots}900{\degree}C Abschrecken in Öl erzielbare Härte: 58{\ldots}62HRC & % Härten
+    100{\degree}C 60 HRC
+    200{\degree}C 59 HRC % Anlasen
+     \\
+    \hline % ---------------------------------------------------------------------------------
+    Böhler K720 (1.2842) 90MnCrV8& % Material
+    680{\ldots}720{\degree}C & % Weichglühen
+    & % Spannungsarmglühen
+    & % Normalglühtemperatur
+    790{\ldots}810{\degree}C Abschrecken in Öl erzielbare Härte: 63{\ldots}65HRC & % Härten
+    100{\degree}C 64 HRC
+    200{\degree}C 62 HRC % Anlasen
+     \\
+    \hline % ---------------------------------------------------------------------------------
+    Böhler K990 (1.1545) C105W1 & % Material
+    680{\ldots}710{\degree}C & % Weichglühen
+    600{\ldots}650{\degree}C & % Spannungsarmglühen
+    800{\degree}C & % Normalglühtemperatur
+    770{\ldots}800{\degree}C Abschrecken in (Wasser) ich würde allerdings Öl verwenden, erzielbare Härte: 65HRC & % Härten
+    100{\degree}C 64 HRC
+    200{\degree}C 62 HRC  % Anlasen
+     \\
+    \hline % ---------------------------------------------------------------------------------
+    Böhler V960 (1.1221) Ck60 & % Material
+    650{\ldots}700{\degree}C & % Weichglühen
+    & % Spannungsarmglühen
+    820{\ldots}850{\degree}C & % Normalglühtemperatur
+    820{\ldots}840{\degree}C Abschrecken in Öl erzielbare Härte: 65HRC & % Härten
+    100{\degree}C bis 200{\degree}C % Anlasen
+     \\
+    \hline % ---------------------------------------------------------------------------------
+    Böhler K460 (1.2510) 100MnCrW4 & % Material
+    740{\ldots}770{\degree}C & % Weichglühen
+    650{\degree}C& % Spannungsarmglühen
+    & % Normalglühtemperatur
+    780{\ldots}820{\degree}C Abschrecken in Öl erzielbare Härte: 58{\ldots}62 HRC & % Härten
+    100{\degree}C 60 HRC % Anlasen
+    200{\degree}C 59 HRC\\ 
+    \hline % ---------------------------------------------------------------------------------
+    
+\end{longtable}
+\normalsize
+  \caption{Eckdaten für das Härten verschiedener Stähle}
+  \label{tab:eck}
+\end{table}
+
+\newpage
+% \twocolumn
+\listoftables
+% \onecolumn
+\begin{thebibliography}{xxxxxxxxxxxxxxxxxxx}
+
+   \bibitem[Messerforum, ZusWaermBeh]{zusWaermBeh}\href{http://www.messerforum.net/showthread.php?26645-Zusammenfassung-W\%E4rmebehandlung&highlight=Normalisieren}{Messerforum Forumsbeitrag}
+   \bibitem[Wikipedia, Glühen]{wikiGlueh}\href{http://de.wikipedia.org/wiki/Gl%C3%BChen}{Wikipedia: Glühen}
+   \bibitem[Wikipedia, Anlassen]{wikiAnlass}\href{http://de.wikipedia.org/wiki/Anlassen}{Wikipedia: Anlassen}
+\end{thebibliography}
+
+% \twocolumn
+
+\end{document}
